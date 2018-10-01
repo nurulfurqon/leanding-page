@@ -1,0 +1,31 @@
+.#{$global-prefix-name}align {
+  &-left {
+    text-align: left !important;
+  }
+
+  &-right {
+    text-align: right !important;
+  }
+
+  &-center {
+    text-align: center !important;
+  }
+
+  &-justify {
+    text-align: justify !important;
+  }
+}
+
+.#{$global-prefix-name}valign {
+  &-top {
+    vertical-align: top !important;
+  }
+
+  &-middle {
+    vertical-align: middle !important;
+  }
+
+  &-bottom {
+    vertical-align: bottom !important;
+  }
+}

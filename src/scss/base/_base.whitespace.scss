@@ -1,0 +1,66 @@
+
+// Config
+$whitespace-size-list: (4, 8, 12, 16, 24, 32, 40, 44, 48, 56, 68, 72);
+
+// Generate classes
+@each $size in $whitespace-size-list {
+  .#{$global-prefix-name}mar--#{$size} {
+    margin: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}mar-t--#{$size} {
+    margin-top: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}mar-r--#{$size} {
+    margin-right: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}mar-b--#{$size} {
+    margin-bottom: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}mar-l--#{$size} {
+    margin-left: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}mar-v--#{$size} {
+    margin-top: #{$size}px !important;
+    margin-bottom: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}mar-h--#{$size} {
+    margin-left: #{$size}px !important;
+    margin-right: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}pad--#{$size} {
+    padding: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}pad-t--#{$size} {
+    padding-top: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}pad-r--#{$size} {
+    padding-right: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}pad-b--#{$size} {
+    padding-bottom: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}pad-l--#{$size} {
+    padding-left: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}pad-v--#{$size} {
+    padding-top: #{$size}px !important;
+    padding-bottom: #{$size}px !important;
+  }
+
+  .#{$global-prefix-name}pad-h--#{$size} {
+    padding-left: #{$size}px !important;
+    padding-right: #{$size}px !important;
+  }
+}

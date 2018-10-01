@@ -1,0 +1,13 @@
+// Config
+$line-height-list: (
+  '1': 1,
+  '1-4': 1.4,
+  '1-6': 1.6,
+  '2': 2
+);
+
+@each $name, $size in $line-height-list {
+  .#{$global-prefix-name}line-height--#{$name} {
+    line-height: $size !important;
+  }
+}

@@ -1,0 +1,28 @@
+
+.#{$global-prefix-name}media {
+  @include clearfix;
+
+  position: relative;
+  display: block;
+}
+
+.#{$global-prefix-name}media__head {
+  float: left;
+  margin-right: 16px;
+}
+
+.#{$global-prefix-name}media__img {
+  display: block;
+  object-fit: cover;
+}
+
+.#{$global-prefix-name}media__body {
+  position: relative;
+  overflow: hidden;
+  display: block;
+
+  &,
+  > :last-child {
+    margin-bottom: 0;
+  }
+}

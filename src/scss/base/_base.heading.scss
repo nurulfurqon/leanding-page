@@ -1,0 +1,21 @@
+
+// Config
+$heading-size-list: (16, 14, 12, 10);
+
+// Generate classes
+@each $size in $heading-size-list {
+  .#{$global-prefix-name}heading--#{$size} {
+    font-size: #{$size}px;
+    font-weight: bold;
+  }
+}
+
+// Override default styles
+@for $index from 1 through length($heading-size-list) {
+  $size: nth($heading-size-list, $index);
+
+  h#{$index} {
+    font-size: #{$size}px;
+    font-weight: bold;
+  }
+}

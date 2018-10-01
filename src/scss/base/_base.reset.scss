@@ -1,0 +1,50 @@
+// ==========================================================================
+// RESET
+// ==========================================================================
+
+// Common reset
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+img,
+hr,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+li > {
+  ol,
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+// Hack
+* {
+  word-wrap: break-word;
+
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}

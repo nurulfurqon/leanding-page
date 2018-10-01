@@ -1,0 +1,35 @@
+$global-prefix-name: 'gb-';
+
+// Font & Typography
+$global-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$global-font-size:    14px !default;
+$global-font-weight:  400 !default;
+$global-line-height:  1.4 !default;
+$global-background-color: #f3f4f6;
+$global-text-color: #333;
+
+// Color
+$global-color-branding: #d71149;
+$global-color-branding-light: #ee4b60;
+$global-color-white: #fff;
+$global-color-black: #000;
+
+// Font Weight
+$global-font-weight-list: (
+  normal:     400,
+  medium:     600,
+  bold:       700
+);
+
+// Whitespaces
+$global-whitespace-list: (4, 8, 12, 16, 24, 32);
+
+// Mixins
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: " "; // sass-lint:disable-line quotes
+    display: table;
+  }
+  &::after { clear: both; }
+}
